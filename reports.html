@@ -30,43 +30,50 @@
         <div class="row">
           <div class="col-md-4 offset-md-4">
             <img src="assets/img/undraw_investing_7u74.svg" class="img-fluid mx-auto d-block p-3" width="200" alt="logo">
-            <h1 class="border-bottom text-left text-truncate">Hola, <span class="text-primary" id="user_name"></span></h1>
-            <div class="form-group">
-              <label for="" class="font-weight-bold">¿Cuanto dinero ganas al mes?</label>
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-arrow-up text-success"></i></div>
-                </div>
-                <input type="number" class="form-control" placeholder="0" id="incoming">
+
+            <button class="btn btn-outline-primary btn-sm" id="btn_back"><i class="fa fa-arrow-left"></i> Volver a ingresar</button>
+
+            <div class="card shadow my-2">
+              <div class="card-header"><i class="fa fa-chart-pie"></i> Tu balance <i class="fa fa-plus float-right text-primary"></i></div>
+              <div class="card-body">
+                <canvas id="myChart" width="400" height="400"></canvas>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="" class="font-weight-bold">¿Cuanto dinero gastas al mes?</label>
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-arrow-down text-danger"></i></div>
-                </div>
-                <input type="number" class="form-control" placeholder="0" id="outcoming">
+
+            <div class="card shadow my-2">
+              <div class="card-header"><i class="fa fa-chart-pie"></i> Ingresos <i class="fa fa-plus float-right text-primary"></i></div>
+              <div class="card-body">
+                <canvas id="myChart2" width="400" height="400"></canvas>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="" class="font-weight-bold">Dinero que ahorras al mes</label>
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-plus text-success"></i></div>
-                </div>
-                <input type="number" class="form-control" placeholder="0" id="saving">
+
+            <div class="card shadow my-2">
+              <div class="card-header"><i class="fa fa-chart-pie"></i> Tus gastos <i class="fa fa-plus float-right text-primary"></i></div>
+              <div class="card-body">
+                <canvas id="myChart3" width="400" height="400"></canvas>
               </div>
             </div>
 
-            <button class="btn btn-lg btn-outline-dark mx-auto d-block" id="btn_reports"><i class="fa fa-chart-bar"></i> Generar reportes</button>
+
+            <div class="card shadow my-2">
+              <div class="card-header"><i class="fa fa-question-circle"></i> Consejos</div>
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
 
 
-            <footer class="my-5">
-              <img src="assets/img/undraw_make_it_rain_iwk4.svg" class="img-fluid mx-auto d-block p-3" alt="footer">
-            </footer>
+
+            <a href="https://www.paypal.me/hstev" target="_blank" class="btn btn-primary mx-auto d-block my-5"><i class="fab fa-paypal"></i> Donar</a>
+
+  
           </div>
         </div>
       </div>
@@ -85,7 +92,8 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/jquery-confirm/dist/jquery-confirm.min.js"></script>
     <script src="node_modules/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/reports.js"></script>
   </body>
 </html>
